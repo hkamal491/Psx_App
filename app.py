@@ -32,7 +32,7 @@ Date=st.date_input("Enter date of Purchase",value=datetime.date(2015,4,27))
 #st.write(type(Date))
 Output=Qty*Price
 C_Output=Qty*Share_price
-df2=pd.read_csv(r"D:\Hammad\Study\Navttc\Dollar_rate.csv")
+df2=pd.read_csv("Dollar_rate.csv")
 #st.dataframe(df2)
 df2['Date']=pd.to_datetime(df2['Date']).dt.date
 df2_rate=df2[df2['Date']==Date]
